@@ -6,56 +6,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Formulario de cadastro</h1>
-    <p>Preencha todos os campos pedidos, ao final clique em cadastrar.</p>
+    <main>
 
-    <form>
+        <div class="divclass">
+            <h1 class="style_h1">Formulario de cadastro</h1>
+            <p class="style_paragraph">Preencha todos os campos pedidos, ao final clique em cadastrar.</p>
+        </div>
 
-        <label for="nome">Nome completo:</label><br>
-        <input type="text" name="nome" id="nome" placeholder="Digite seu nome..." required><br>
+        <div class="divclass">
 
-        <label for="email">E-mail:</label><br>
-        <input type="email" name="email" id="email" placeholder="Digite seu e-mail..." required><br>
+            <form>
 
-        <label for="telefone">Telefone:</label><br>
-        <input type="text" name="telefone" id="telefone" placeholder="Formato: (00)00000-0000" required><br>
+                <label for="nome">Nome completo:</label><br>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome..." required><br>
 
-        <label for="cpf">CPF:</label><br>
-        <input type="text" name="cpf" id="cpf" placeholder="Formato: 000.000.000-00" required><br>
+                <label for="email">E-mail:</label><br>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail..." required><br>
 
-        <label for="dataNascimento">Data de nascimento:</label><br>
-        <input type="date" name="dataNascimento" id="dataNascimento"><br>
+                <label for="telefone">Telefone:</label><br>
+                <input type="text" name="telefone" id="telefone" placeholder="Formato: (00)00000-0000" required><br>
 
-        <label for="curso">Escolha o curso que deseja fazer:</label><br>
-        <select name="curso" id="curso" required>
-            <option value="">Escolha o curso</option>
-            <option value="html">HTML</option>
-            <option value="css">CSS</option>
-            <option value="javaScript">JAVA SCRIPT</option>
-        </select><br>
+                <label for="cpf">CPF:</label><br>
+                <input type="text" name="cpf" id="cpf" placeholder="Formato: 000.000.000-00" required><br>
 
-        <label for="mensagem">Porque escolheu a Kenzie?</label><br>
-        <textarea name="mensagem" id="mensagem" cols="30" rows="5"
-            placeholder="Digite sua mensagem..."></textarea><br>
+                <label for="dataNascimento">Data de nascimento:</label><br>
+                <input type="date" name="dataNascimento" id="dataNascimento"><br>
 
-        <label for="senha">Crie sua Senha:</label><br>
-        <input type="password" name="senha" id="senha" placeholder="Digite sua senha..." required><br>
-        <label for="senha2">Confirme sua senha:</label><br>
-        <input type="password" name="senha2" id="senha2" placeholder="Digite novamente a senha..." required><br>
+                <label for="curso">Escolha o curso que deseja fazer:</label><br>
+                <select name="curso" id="curso" required>
+                    <option value="">Escolha o curso</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javaScript">JAVA SCRIPT</option>
+                </select><br>
 
-        <p>Deseja receber mensagens sobre as novidades da Kenzie em seu e-mail?</p>
-        <label for="sim">Sim</label>
-        <input type="radio" name="receberEmail" id="sim" value="sim">
-        <label for="nao">Não</label>
-        <input type="radio" name="receberEmail" id="nao" value="nao"><br>
+                <label for="mensagem">Porque escolheu a Kenzie?</label><br>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="5"
+                    placeholder="Digite sua mensagem..."></textarea><br>
 
-        <button type="submit">Cadastrar</button>
+                <label for="senha">Crie sua Senha:</label><br>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha..." required><br>
+                <label for="senha2">Confirme sua senha:</label><br>
+                <input type="password" name="senha2" id="senha2" placeholder="Digite novamente a senha..." required><br>
 
-    </form>
+                <p class="style_paragraph">Deseja receber mensagens sobre as novidades da Kenzie em seu e-mail?</p>
+                <label for="sim">Sim</label>
+                <input type="radio" name="receberEmail" id="sim" value="sim">
+                <label for="nao">Não</label>
+                <input type="radio" name="receberEmail" id="nao" value="nao"><br>
+
+                <button type="submit">Cadastrar</button>
+
+            </form>
+
+        </div>
+
+    </main>
 
 </body>
 
